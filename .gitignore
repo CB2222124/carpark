@@ -1,0 +1,8 @@
+log/
+target/
+.DS_Store
+.idea/
+.vscode/
+
+carpark.dat
+carpark.log
