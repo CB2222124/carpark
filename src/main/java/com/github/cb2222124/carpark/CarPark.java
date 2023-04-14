@@ -5,7 +5,9 @@ import java.io.ObjectInputStream;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Car park data structure.
@@ -84,12 +86,12 @@ public class CarPark implements Serializable {
     }
 
     /**
-     * Gets the set of vehicles.
+     * Gets an unmodifiable set of vehicles.
      *
-     * @return Vehicle HashSet.
+     * @return Unmodifiable vehicle set.
      */
-    public HashSet<String> getVehicles() {
-        return vehicles;
+    public Set<String> getVehicles() {
+        return Collections.unmodifiableSet(vehicles);
     }
 
     /**
